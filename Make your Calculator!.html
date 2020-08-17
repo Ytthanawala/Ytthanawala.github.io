@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Make your Calculator</title>
+</head>
+
+<body>
+Enter First Value:<input  id="first value"  type="text">
+<br/>
+
+<br/>
+Enter Second Value:<input  id="second value"  type="text">
+<br/>
+
+Operator:
+<br/>
+<button type="submit" on onClick="add()"> Add </button>
+<br/>
+<button type="submit" on onClick="sub()"> Subtract </button>
+<br/>
+
+<button type="submit" on onClick="mul()"> Multiplication </button>
+<br/>
+
+<button type="submit" on onClick="div()"> Division </button>
+<br/>
+
+
+
+<br/>
+<br/>
+Answer: <button type=""> </button><p id="answer"></p>
+
+
+<script>
+	
+	function add()
+	{var  a,b,c;
+	      a=  document.getElementById('first value').value;
+	      b=  document.getElementById('second value').value;
+	      c= parseFloat(a)+ parseFloat(b) ;
+	
+	   document.getElementById('answer').innerHTML=c;
+	}
+	function sub()
+	{var  a,b,c;
+	      a=  document.getElementById('first value').value;
+	      b=  document.getElementById('second value').value;
+	      c= parseFloat(a)- parseFloat(b) ;
+	
+	   document.getElementById('answer').innerHTML=c;
+	}
+	function mul ()
+	{var  a,b,c;
+	      a=  document.getElementById('first value').value;
+	      b=  document.getElementById('second value').value;
+	      c= parseFloat(a)* parseFloat(b) ;
+	
+	   document.getElementById('answer').innerHTML=c;
+	}
+	function div()
+	{var  a,b,c;
+	      a=  document.getElementById('first value').value;
+	      b=  document.getElementById('second value').value;
+	      c= parseFloat(a)/ parseFloat(b) ;
+	
+	   document.getElementById('answer').innerHTML=c;
+	}
+	
+
+	
+	
+	
+	
+	</script>
+
+</body>
+</html>
