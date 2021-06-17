@@ -33,8 +33,8 @@
             </div>
             <div class="row">
                 <div class="col-md-12 form-group d-flex justify-content-center ">
-                    <input type="button" class="btn btn-block btn-login loginButton" placeholder="Enter your Password"
-                        id="sumbitButton" onclick="validateForm()" value="Submit">
+                    <button type="button" class="btn btn-block btn-login loginButton" placeholder="" id="sumbitButton"
+                        onclick="validateForm()" value="">Login <i class="fas fa-sign-in-alt"></i></button>
                 </div>
             </div>
             <br>
@@ -47,17 +47,19 @@
 
         <div class=" row">
             <div class="col-md-12 input-group-sm form-group">
-                <small class="form-text email-id" id="textInput">Data Contains Additional UserNames : David, Isaac,
-                    Newton | Password remains the same.
+                <small class="form-text email-id">User Names:
                 </small>
-                <!-- <input type="text" id="addUserInput" class="form-control" placeholder="Add New Username" value=""> -->
+                <small class="form-text email-id" id="ptext">
+                </small>
+                <input type="text" id="addUserInput" class="form-control" placeholder="Add New Username" value="">
 
             </div>
         </div>
         <div class="row">
             <div class="col-md-12 form-group d-flex justify-content-center">
-                <button onclick="addUser();" id="addUserButton" class="btn btn-sm btn-warning btn-block">Load
-                    Data</button>
+                <button onclick="pushData();" id="addUserButton" class="btn btn-sm btn-warning btn-block"><i
+                        class="fas fa-user"></i> Add
+                    User</button>
             </div>
         </div>
 
@@ -68,7 +70,7 @@
     <!-- Footer -->
     <footer class="page-footer font-small blue">
         <div class="footer-copyright text-center py-3 fixed-bottom">© 2021 No-copyright &hearts;
-            <a href="https://ytthanawala.github.io">Taher Thanawala</a>
+            <a href="https://www.linkedin.com/in/taher-thanawala/" target="_blank">Taher Thanawala</a>
         </div>
     </footer>
 
@@ -80,6 +82,9 @@
     </link>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
     <script src="sweetalert2.all.min.js"></script>
+    <script>
+
+    </script>
 </body>
 
 </html>
